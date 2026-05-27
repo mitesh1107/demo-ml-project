@@ -1,4 +1,13 @@
-<form action="/pred" method="post"> 
+<html>
+	<head> 
+		<title>Ml Project</title>
+		<link  rel="stylesheet"    href="{{ url_for('static', filename='style.css')  }}">	
+
+	</head>
+
+<body>
+
+   <form action="/pred" method="post"> 
     <input type="text" name="v1" id="Item_Identifier"  placeholder="Item_Identifier" > <br> <br>
 
     <input type="text" name="v2" id="Item_Weight"  placeholder="Item_Weight" > <br> <br>
@@ -25,6 +34,10 @@
 
 
 
-</form>
+   </form>
 
-<h1>The sales is : {{sales}} </h1>
+   <h1>The sales is : {{sales}} </h1>
+
+
+ </body>
+</html>
